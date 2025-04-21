@@ -17,7 +17,6 @@ a{
 .redButton{
     font-family: 'RoadRadio';
     font-size: 14px;
-    
     color: rgba(255, 255, 255, 1);
     background-color: rgba(191, 39, 56, 1);
 }
@@ -61,6 +60,7 @@ a{
     text-decoration:none;
     font-size:15px;
     line-height:100%;
+    color:rgba(38, 38, 51, 1);
 }
 
 .header-article2-number{
@@ -183,10 +183,6 @@ input[name = "Ask-button"]{
 .footer-left{
     background-color: rgba(34, 34, 37, 1);
 }
-                                                
-.footer-left-list2-item a{
-    font-family: 'AkzidenzGroteskPro-Regular';
-}
 
 .footer-left-list1-item a{
     color:rgba(255, 255, 255, 1);
@@ -198,6 +194,7 @@ input[name = "Ask-button"]{
     font-size: 16px;
     line-height: 180%;
     color: rgba(121, 121, 134, 1);
+    font-family: 'AkzidenzGroteskPro-Regular';
 }
 
                                             /* section footer-right */
@@ -210,6 +207,7 @@ input[name = "Ask-button"]{
     font-weight: 500;
     font-size: 30px;
     line-height: 130%;
+    color: rgba(255, 255, 255, 1);
 }
 
 .footer-right-top a{
@@ -229,6 +227,7 @@ input[name = "Ask-button"]{
     font-size: 16px;
     line-height: 130%;
     font-family: 'AkzidenzGroteskPro-Regular';
+    font-style: normal;   
 }
 
 
@@ -253,7 +252,7 @@ input[name = "Ask-button"]{
     background-color:rgba(42, 42, 46, 1);
 }
 
-.DevelopingSite a,p{
+.DevelopingSite a, .DevelopingSite p{
     font-size: 13px;
     line-height: 110%;
     font-family: 'AkzidenzGroteskPro-Regular';
@@ -267,3 +266,68 @@ input[name = "Ask-button"]{
     color: rgba(190, 190, 190, 1);
 }
     
+
+
+
+
+                                                /* разметка при ширине экрана менее 1320px */
+
+
+@media(max-width:1280px){
+
+                                                        /* header */
+
+    .header-article1-item a{
+        font-size:14px;
+        line-height:140%;
+    }
+
+    .header-article1-item:last-child{
+        display:none;
+    }
+    
+                                                       /* main */
+                                                    /* section Info1 */
+    
+    .Info1 h1{
+        font-size:32px;
+    }
+
+    .Info1-Part1-number{
+        font-size: 28px;
+        line-height: 120%;
+    }
+
+    .Info1-Part1-group1 h2,p{
+        font-size:14px;
+        line-height: 140%;
+    }
+
+    .Info1-Part2 h2{
+        font-size: 28px;
+        line-height: 120%;
+    }
+
+
+                                                        /* footer */
+                                                    /* section footer-left */
+                                        
+    .footer-left-list1-item a{
+        font-size: 20px;
+        line-height: 170%;
+    }
+
+                                                /* section footer-right */
+                                                
+    .footer-right-number1 , .footer-right-number2{
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 150%;
+    }
+
+    .footer-right-email{
+        color: rgba(242, 49, 71, 1);
+        font-size: 19px;
+        line-height: 100%;
+    }
+}

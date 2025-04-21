@@ -15,8 +15,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="header-content">
+    <header class="page-header">
             <article class="header-article1">
                 <button class="header-article1-moreInfButton">
                     <img src="img/menu.svg" width="32" height="12">
@@ -53,7 +52,6 @@
                     Оставить заявку
                 </a>
             </article>
-        </div>
     </header>
 
 
@@ -97,23 +95,30 @@
                 </div>
             </arcticle>
 
-            <form class="Info1-Part1">
-                <div class="Info1-Part1-NameNumber">
-                    <input type="text" placeholder="Введите ваше имя">
-                    <input type="number" placeholder="Ваш телефон">
-                </div>
 
-                <textarea class="Info1-Part1-textarea" placeholder="Ваше сообщение"></textarea>
+            <article class="Info1-Part2">
 
-                <div class="Info1-Part1-agreeing">
-                    <input id="Info1-Part1-checkbox" type="checkbox">
-                    <label for="Info1-Part1-checkbox" class="Info1-Part1-agreeing-text">
-                        Я подтверждаю свое согласие с политикой в отношении <a  class="Info1-Part1-agreeing-link" href="#">обработкиперсональных данных</a>
-                    </label>
-                </div>
+                <h2>Оставлись вопросы?</h2>
 
-                <input name="Ask-button" class="redButton" type="submit" value="задать вопрос">
-            </form>
+                <form>
+                    <div class="Info2-Part1-NameNumber">
+                        <input type="text" placeholder="Введите ваше имя">
+                        <input type="number" placeholder="Ваш телефон">
+                    </div>
+    
+                    <textarea class="Info1-Part2-textarea" placeholder="Ваше сообщение"></textarea>
+    
+                    <div class="Info2-Part1-agreeing">
+                        <input id="Info1-Part2-checkbox" type="checkbox">
+                        <label for="Info1-Part2-checkbox" class="Info1-Part1-agreeing-text">
+                            Я подтверждаю свое согласие с политикой в отношении <a  class="Info1-Part1-agreeing-link" href="#">обработкиперсональных данных</a>
+                        </label>
+                    </div>
+    
+                    <input name="Ask-button" class="redButton" type="submit" value="задать вопрос">
+                </form>
+            </article>
+        
         </section>
 
         <section class="map">
