@@ -1,4 +1,4 @@
-                                                common
+                                                /* common */
 body{
     margin: 0;
     padding: 0;
@@ -17,23 +17,20 @@ ul,li{
 
                                                 /* header */
 
-.page-header {
-    max-width: 1390px;
-    width: 100%;
+.page-header{
+    max-width: 1450px;
     height: 92px;
     margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 30px;
     display: flex;
     align-items: center;
 }
 
 .header-article1{
-    /* width: 499px; */
+    width: 499px;
     height: 18px;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    /* margin-right: 93px; */
 }
 
 .header-article1-moreInfButton{
@@ -46,27 +43,23 @@ ul,li{
 }
 
 .header-article1-list{
-    /* width: 408px; */
-    height: 18px;
+    width: 408px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    /* margin-right: 9px; */
 }
 
 .header-logo{
-    /* margin:0 100px 0 93px; */
     margin:0 auto;
 }
 
 .header-article2{
-    /* width: 492px; */
+    width: 492px;
     height: 58px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin:0 auto; */
 }
 
 .header-article2-buttons{
@@ -107,19 +100,74 @@ ul,li{
 
 
 
-
                                                 /* разметка при размере экрана меньше  1320px*/
 
 @media(max-width:1320px){
-    .header-article1-list{
-        width: 197px;
-        height: 20px;
-    } 
-    
     .header-article1{
         width: 268px;
         height: 23px;
-        margin-right: auto;
     }
 
+    .header-article1-list{
+        width: 197px;
+        height: 20px;
+    }
+
+    .header-article2{
+        width: 232px;
+    }
+
+    .header-article2-registerButton{
+        display:none;
+    }
+}
+
+
+
+
+
+
+
+@media(max-width:768px){
+    .header-article1{
+        width: 23px;
+    }
+
+    .header-article1-list{
+        display: none;
+    }
+
+    .header-article2{
+        /* width: 51px; */
+        width: 232px;
+    }
+
+    .header-article2-mediaInf{
+        /* display: none; */
+    }
+}
+
+
+
+@media(max-width:480px){
+
+    .page-header{
+        min-width: 300px;
+    }
+
+    .header-article1{
+        width: 23px;
+    }
+
+    .header-article1-list{
+        display: none;
+    }
+
+    .header-article2{
+        width: 51px;
+    }
+
+    .header-article2-mediaInf{
+        display: none;
+    }
 }
