@@ -84,7 +84,10 @@ a{
 .breadcrams-main{
     color:rgba(121, 121, 134, 1);
     font-size:12px;
-    line-height:100%;
+}
+
+.breadcrams-contacts.activePage{
+    font-size:12px;
 }
 
 .breadcrams-point{
@@ -98,12 +101,14 @@ a{
     font-family: "RoadRadio";
     font-size:46px;
     line-height:100%;
+    font-weight: 400;
 }
 
 .Info1-Part1-number{
     font-size: 36px;
     line-height: 110%;
     font-family: "RoadRadio";
+    font-weight: 400;
 }
 
 .Info1-Part-email{
@@ -114,6 +119,8 @@ a{
 .Info1-Part1-group1 h2,p{
     font-size:17px;
     line-height: 110%;
+    font-weight: 400;
+    color: rgba(38, 38, 51, 1);
 }
 
 .Info1-Part1-group2-item{
@@ -123,17 +130,26 @@ a{
     font-weight: 400;
 }
 
+.Info1-Part2 h2{
+    font-family: 'RoadRadio';
+    font-size: 36px;
+    line-height: 110%;
+    color: rgba(33, 33, 33, 1);
+    font-weight: 400;
+}
+
 input::placeholder , textarea::placeholder{
+    font-family:"Golos Text", sans-serif;
     font-size: 16px;
     line-height: 150%;
-    color: rgba(121, 121, 134, 1);
+    color:rgba(121, 121, 134, 1);
 }
 
 label{
     color: rgba(128, 128, 128, 1);
 }
 
-.Info1-Part1-agreeing-link{
+.Info1-Part2-agreeing-link{
     color:rgba(38, 38, 51, 1);
 }
 
@@ -142,6 +158,11 @@ input[name = "Ask-button"]{
 }
 
                                                 /* section cities */
+
+.cities-item h2{
+    font-weight: 400;
+}
+
 
 .cities-item{
     border-radius:20px;
@@ -270,20 +291,16 @@ input[name = "Ask-button"]{
 
 
 
-                                                /* разметка при ширине экрана менее 1320px */
+                                                /* разметка при ширине экрана менее 768px */
 
 
-@media(max-width:1280px){
+@media(max-width:768px){
 
                                                         /* header */
 
     .header-article1-item a{
         font-size:14px;
         line-height:140%;
-    }
-
-    .header-article1-item:last-child{
-        display:none;
     }
     
                                                        /* main */
@@ -306,6 +323,14 @@ input[name = "Ask-button"]{
     .Info1-Part2 h2{
         font-size: 28px;
         line-height: 120%;
+        color:rgba(33, 33, 33, 1);
+    }
+
+
+                                                        /* section cities */
+
+    .cities-item h2{
+        font-weight: 400;
     }
 
 
@@ -330,4 +355,79 @@ input[name = "Ask-button"]{
         font-size: 19px;
         line-height: 100%;
     }
+}
+
+
+
+                                                         /* разметка при ширине экрана менее 480px */   
+                                                         
+@media(max-width:480px){
+
+                                                        /* main */
+                                                    /* breadcrums */
+                                                    
+    .breadcrams-main{
+        font-size:12px;
+        line-height:100%;
+    }
+
+    .breadcrams-point{
+        border-radius:50%;
+        background-color: rgba(121, 121, 134, 1);
+    }
+
+                                                    /* section Info1 */
+    
+    .Info1 h1{
+        font-size:22px;
+        line-height:120%;
+    }
+
+    .Info1-Part1-number{
+        font-size: 28px;
+        line-height: 120%;
+    }
+
+    .Info1-Part-email{
+        font-size: 25px;
+        color: rgba(191, 39, 56, 1);
+    }
+
+
+    .Info1-Part2 h2{
+        font-size: 20px;
+
+    }
+
+                                                    /* section cities */
+
+    .cities-item h2{
+        font-weight: 400;
+    }
+
+                                                            /* footer */
+                                                    /* section footer-left */
+                                        
+    .footer-left-list1-item a{
+        font-size: 20px;
+        line-height: 170%;
+    }
+
+                                                /* section footer-right */
+                                                
+    .footer-right-number1 , .footer-right-number2{
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 150%;
+    }
+
+    .footer-right-email{
+        font-size: 19px;
+        line-height: 100%;
+    }
+
+    .cities-item address{
+        font-weight: 400;
+    }
+
 }
