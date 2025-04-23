@@ -2,6 +2,7 @@
 body{
     margin: 0;
     padding: 0;
+    min-width: 280px;
 }
 
 *{
@@ -60,6 +61,7 @@ ul,li{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 15px;
 }
 
 .header-article2-buttons{
@@ -98,7 +100,6 @@ ul,li{
     border-radius: 14px;
 }
 
-
                                                             /* breadcrams */
 
 .breadcrams{
@@ -125,7 +126,7 @@ ul,li{
     height: 1px;
     border-radius: 50%;
 }
-
+                                                        /* Info1-topBackground */
 .Info1-topBackground{
     width: 100%;
     height: 100px;
@@ -133,37 +134,182 @@ ul,li{
     align-items: center;
     justify-content: center;
     background-color: rgba(245, 245, 245, 1);
+    margin-bottom: 62px;
 }
 
 h1{
     margin: 0;
 }
-                                                                 /* Info1 */
 
 
+                                                      /* section Info1*/
+
+.Info1{
+    margin-bottom: 300px;
+}
+
+.Info1-wrapper{
+    display: flex;
+    max-width: 1340px;
+    height: 492px;
+    margin: 0 auto;
+    padding:0 25px;
+}                                                     
+
+.Info1-Part1{
+    width: 607px;
+    height: 492px;
+    margin-right:52px;
+}
+
+.Info1-Part1-number{
+    margin:0;
+}
+
+.Info1-Part-email{
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.Info1-Part1-group1{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.Info1-Part1-group1 p , .Info1-Part1-group1-item:first-child{
+    margin: 0;
+    margin-bottom:5px;
+}
+
+.Info1-Part1-group1-item:last-child{
+    margin: 0;
+}
+
+.Info1-Part1-group2-item{
+    margin: 0;
+    margin-bottom:5px;
+}
+
+.Info1-Part1-group2-MarginItem{
+    margin-bottom: 15px;
+}
+
+.Info1-Part2{
+    width: 630px;
+    height: 395px;
+}
+                                            
+.Info1-Part2 h2{
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+form{
+    width: 630px;
+    height: 253px;
+}
+
+.Info2-Part1-NameNumber{
+    width: 630px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.Info2-Part1-NameNumber input{
+    width: 300px;
+    height: 52px;
+    border-radius: 14px;
+    border:none;
+    background-color: rgba(245, 245, 245, 1);
+    padding:17px 0 11px 20px
+
+}
+
+.Info1-Part2-textarea{
+    width: 630px;
+    height: 133px;
+    padding: 17px 0 92px 20px;
+    border: none;
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+.Info2-Part1-agreeing{
+    width: 630px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#Info1-Part2-checkbox{
+    /* appearance: none;
+    -webkit-appearance:none; */
+    margin: 0;
+    margin-right: 16px;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.Info1-Part1-agreeing-text{
+    width: 594px;
+    height: 16px;
+}
+
+input[name = "Ask-button"]{
+    width: 192px;
+    height: 52px;
+    padding: 19px 36px;
+    border-radius: 14px;
+    cursor: pointer;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         /* media */
                                                 /* разметка при размере экрана меньше  1320px*/
 
 @media(max-width:1320px){
 
-    /* .header-logo{
-    
-    } */
+    .header-article1-item:last-child{
+        display:none;
+    }
 
     .header-article1{
-        width: 499px;
-        /* width: 268px; */
+        /* width: 499px; */
+        width: 268px;
         height: 23px;
+        /* margin-right: 100px; */
     }
 
     .header-article1-list{
-        width: 408px;
-        /* width: 197px; */
+        /* width: 408px; */
+        width: 197px;
         height: 20px;
     }
 
     .header-article2{
+        margin:0;
         width: 232px;
-        margin-right: auto;
+        /* margin-right: auto; */
+        margin-left:40px;
     }
 
     .header-article2-registerButton{
@@ -171,17 +317,20 @@ h1{
     }
 }
 
-                                                            /* разметка при размере экрана меньше  1150px*/
+                                                    /* разметка при размере экрана меньше  1150px*/
 
 @media(max-width:1150px){
 
-    .header-article1-item:last-child{
+                                                        /* header */
+
+    /* .header-article1-item:last-child{
         display:none;
-    }
+    } */
     
     .header-article1{
         width: 268px;
         height: 23px;
+        /* margin-right: 100px; */
     }
 
     .header-article1-list{
@@ -190,17 +339,46 @@ h1{
     }
 
     .header-article2{
+        /* margin:0; */
         width: 232px;
         margin-right:0;
+        /* margin-left:25px; */
     }
-    
+
+                                                        /* Info1 */
+
+    .Info1-Part2{
+        width: 418px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .Info2-Part1-NameNumber{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 130px;
+        margin: 0;
+        margin-bottom: 12px;
+    }
 }
 
-                                                            /* разметка при размере экрана меньше  768px*/
+                                            /* разметка  при размере экрана меньше  768px*/
 
 @media(max-width:768px){
+
+    .header-logo{
+        margin: 0;
+        margin:0 auto;
+    }
+
     .header-article1{
         width: 23px;
+        /* margin-right: auto; */
+        margin-right:20px;
     }
 
     .header-article1-list{
@@ -208,21 +386,24 @@ h1{
     }
 
     .header-article2{
-        /* width: 51px; */
-        width: 232px;
+        margin:0;
+        width: 51px;
+        /* margin-left:50px;
+        width: 232px; */
+        margin:0;
     }
 
     .header-article2-mediaInf{
-        /* display: none; */
+        display: none;
     }
 }
 
+                                            /* разметка при размере экрана меньше  480px*/
 
 @media(max-width:480px){
-    .page-header{                                            /* разметка при размере экрана меньше  480px*/
-
-        min-width: 300px;
-    }
+    /* .page-header{                                            
+        min-width: 280px;
+    } */
 
     .header-article1{
         width: 23px;
@@ -233,6 +414,7 @@ h1{
     }
 
     .header-article2{
+        margin:0;
         width: 51px;
     }
 
@@ -241,20 +423,14 @@ h1{
     }
 }
 
-                                            /* разметка при размере экрана меньше  360px*/
+                                            /* разметка при размере экрана меньше  320px*/
                                                                         
 
-@media(max-width:360px){
+@media(max-width:320px){
     .header-logo img{
         width:67.03px;
         height: 40px;
     }
 }
-
-
-
-
-
-
 
 

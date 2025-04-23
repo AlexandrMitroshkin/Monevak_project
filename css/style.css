@@ -157,6 +157,11 @@ input[name = "Ask-button"]{
     border:none;
 }
 
+.Info1-Part1-agreeing-text{
+    font-size: 13px;
+    line-height: 120%;
+}
+
                                                 /* section cities */
 
 .cities-item h2{
