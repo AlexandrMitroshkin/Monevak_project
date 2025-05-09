@@ -13,6 +13,7 @@
     <link href="css/grid_normVersion.css" rel="stylesheet">
 
     <title>Document</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b051e424-d51e-4cf7-b95c-913d0bcd40f1&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
     <header class="page-header">
@@ -126,9 +127,11 @@
             </div>
         </section>
 
-        <section class="map">
+  
+           <div id="map" style="width: 100%; height: 400px;"></div>
+        <!-- <section class="map">
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa4e6da23eb687b5bcdb4905a15f2778da007bb4a906e6ec65a8de66ec1fab20b&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-        </section>
+        </section> -->
 
         <section class="cities">
             <ul class="cities-list"> 
@@ -246,4 +249,34 @@
     </footer>
 
     <script src="js/script.js"></script>
+
+<script>
+ymaps.ready(function() {
+    // 1. Создаём карту
+    const map = new ymaps.Map('map', {
+        center: [55.76, 37.64], // Координаты центра
+        zoom: 10 // Масштаб
+    });
+
+    // 2. Добавляем цветной маркер
+    const marker = new ymaps.Placemark(
+        [55.76, 37.64],
+        {},
+        {preset: 'islands#redIcon'} // Красный маркер
+    );
+    map.geoObjects.add(marker);
+
+    // 3. Применяем фильтр после загрузки
+    map.events.add('load', function() {
+        setTimeout(() => {
+            const canvas = document.querySelector('#map canvas');
+            if (canvas) {
+                canvas.style.filter = 'grayscale(100%)';
+                canvas.style.webkitFilter = 'grayscale(100%)';
+            }
+        }, 500);
+    });
+});
+</script>
+</body>
 </html>
