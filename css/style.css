@@ -150,6 +150,7 @@ label{
 }
 
 .Info1-Part2-agreeing-link{
+    cursor: pointer;
     color:rgba(38, 38, 51, 1);
 }
 
@@ -310,7 +311,7 @@ input[name = "Ask-button"]{
     
                                                        /* main */
                                                     /* section Info1 */
-    
+/*     
     .Info1 h1{
         font-size:32px;
     }
@@ -329,7 +330,7 @@ input[name = "Ask-button"]{
         font-size: 28px;
         line-height: 120%;
         color:rgba(33, 33, 33, 1);
-    }
+    } */
 
 
                                                         /* section cities */

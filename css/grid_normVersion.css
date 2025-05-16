@@ -148,18 +148,16 @@ h1{
     margin-bottom: 300px;
 }
 
-.Info1-wrapper{
+.Info1-wrapper {
     display: flex;
     max-width: 1340px;
-    height: 492px;
     margin: 0 auto;
-    padding:0 25px;
-}                                                     
+    padding: 0 25px;
+}
 
-.Info1-Part1{
-    width: 607px;
-    height: 492px;
-    margin-right:52px;
+.Info1-Part1 {
+    width: 506px;
+    margin-right: 154px;
 }
 
 .Info1-Part1-number{
@@ -185,18 +183,23 @@ h1{
     margin: 0;
 }
 
+/* .Info1-Part1-group2-addresses{
+    padding-right:90px;
+} */
+
 .Info1-Part1-group2-item{
     margin: 0;
-    margin-bottom:5px;
+    margin-bottom:3px;
 }
 
 .Info1-Part1-group2-MarginItem{
-    margin-bottom: 15px;
+    margin-bottom: 17.5px;
 }
 
 .Info1-Part2{
     width: 630px;
     height: 395px;
+    /* margin-left: 151px; */
 }
                                             
 .Info1-Part2 h2{
@@ -209,7 +212,7 @@ form{
     height: 253px;
 }
 
-.Info2-Part1-NameNumber{
+.Info1-Part2-NameNumber{
     width: 630px;
     height: 52px;
     display: flex;
@@ -217,7 +220,7 @@ form{
     margin-bottom: 28px;
 }
 
-.Info2-Part1-NameNumber input{
+.Info1-Part2-NameNumber input{
     width: 300px;
     height: 52px;
     border-radius: 14px;
@@ -237,7 +240,7 @@ form{
     margin-bottom: 20px;
 }
 
-.Info2-Part1-agreeing{
+.Info1-Part2-agreeing{
     width: 630px;
     height: 20px;
     display: flex;
@@ -347,22 +350,66 @@ input[name = "Ask-button"]{
 
                                                         /* Info1 */
 
+    .Info1 h1{
+        font-size:32px;
+    }
+
+    .Info1-Part1 h1{
+        width: 230px;
+    }
+
+    .Info1-Part1-number{
+        font-size: 28px;
+        line-height: 120%;
+    }
+
+    .Info1-Part1-group1 h2,p{
+        font-size:14px;
+        line-height: 140%;
+    }
+
     .Info1-Part2{
-        width: 418px;
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    }
+
+    .Info1-Part2 h2{
+        font-size: 28px;
+        line-height: 120%;
+        color:rgba(33, 33, 33, 1);
+        margin-right: auto;
+    }
+
+    .Info1-Part2 form{
+        width: 350px;
     }
 
 
-    .Info2-Part1-NameNumber{
+    .Info1-Part2-NameNumber{
         display: flex;
         flex-direction: column;
         width: 350px;
         height: 130px;
         margin: 0;
         margin-bottom: 12px;
+    }
+
+    .Info1-Part2-NameNumber input{
+        width: 100%;
+    }
+
+    .Info1-Part2-textarea{
+        width: 350px;
+    } 
+}
+
+                                            /* разметка  при размере экрана меньше  800px*/
+@media(max-width:800px){
+    .Info1-Part1{
+        margin-right:72px;     
     }
 }
 
@@ -396,6 +443,26 @@ input[name = "Ask-button"]{
     .header-article2-mediaInf{
         display: none;
     }
+
+                                                        /* Info1 */
+    .Info1-wrapper{
+        flex-direction: column;
+        min-width: 320px;
+    }
+    
+    /* .Info1-Part1{
+        padding-left:100px;
+        max-width: 500px;
+        min-width: 287px;
+        margin: 0 auto;
+    } */
+
+    .Info1-Part1{
+        max-width: 718px;
+        min-width: 287px;
+        margin: 0 auto;
+    }
+
 }
 
                                             /* разметка при размере экрана меньше  480px*/
@@ -432,5 +499,3 @@ input[name = "Ask-button"]{
         height: 40px;
     }
 }
-
-
