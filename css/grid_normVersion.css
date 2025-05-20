@@ -61,7 +61,7 @@ ul,li{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 15px;
+    margin-left: 10px;
 }
 
 .header-article2-buttons{
@@ -150,14 +150,19 @@ h1{
 
 .Info1-wrapper {
     display: flex;
-    max-width: 1340px;
+    max-width: 1450px;
     margin: 0 auto;
     padding: 0 25px;
 }
 
 .Info1-Part1 {
     width: 506px;
-    margin-right: 154px;
+    margin-right: auto;
+}
+
+.Info1-Part1-numberEmail{
+    display: flex;
+    flex-direction: column;
 }
 
 .Info1-Part1-number{
@@ -291,6 +296,10 @@ input[name = "Ask-button"]{
 
 @media(max-width:1320px){
 
+    /* .header-article1{
+        margin-right: 10px;
+    } */
+
     .header-article1-item:last-child{
         display:none;
     }
@@ -318,6 +327,14 @@ input[name = "Ask-button"]{
     .header-article2-registerButton{
         display:none;
     }
+
+                                                     /* Info1 */
+
+    .Info1-Part1{
+        margin-right: 150px;
+    }
+
+
 }
 
                                                     /* разметка при размере экрана меньше  1150px*/
@@ -342,10 +359,9 @@ input[name = "Ask-button"]{
     }
 
     .header-article2{
-        /* margin:0; */
         width: 232px;
         margin-right:0;
-        /* margin-left:25px; */
+        /* margin-left:15px; */
     }
 
                                                         /* Info1 */
@@ -387,7 +403,6 @@ input[name = "Ask-button"]{
         width: 350px;
     }
 
-
     .Info1-Part2-NameNumber{
         display: flex;
         flex-direction: column;
@@ -416,6 +431,10 @@ input[name = "Ask-button"]{
                                             /* разметка  при размере экрана меньше  768px*/
 
 @media(max-width:768px){
+    
+    .Info1-Part1-numberEmail{
+        padding-left: 15px;
+    }
 
     .header-logo{
         margin: 0;
@@ -460,9 +479,48 @@ input[name = "Ask-button"]{
     .Info1-Part1{
         max-width: 718px;
         min-width: 287px;
-        margin: 0 auto;
+        margin: 0 auto 50px auto;
     }
 
+    .Info1-Part1-group1 , .Info1-Part1-group2{
+        margin-left: 38px;
+    }
+
+    .Info1-Part1-numberEmail{
+        flex-direction: row;
+    }
+
+    .Info1-Part1-number{
+        margin-right: 20px;
+    }
+
+
+    .Info1-Part2{
+        margin: 0 auto;
+        position:relative;
+        right:25px;
+    }
+
+}
+
+                                            /* разметка при размере экрана меньше  500px */
+
+@media(max-width:500px){
+    .Info1-Part1-numberEmail{
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 230px;
+        margin:0 auto;
+    }
+
+    .Info1-Part1-number{
+        margin: 0 auto;
+        margin-bottom: 6px;
+    }
+
+    .Info1-Part-email{
+        margin:0 auto;
+    }
 }
 
                                             /* разметка при размере экрана меньше  480px*/
