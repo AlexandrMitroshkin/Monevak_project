@@ -13,6 +13,7 @@
     <link href="css/grid_normVersion.css" rel="stylesheet">
 
     <title>Document</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b051e424-d51e-4cf7-b95c-913d0bcd40f1&lang=ru_RU"></script>
 </head>
 <body>
     <header class="page-header">
@@ -129,9 +130,11 @@
             </div>
         </section>
 
-        <section class="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa4e6da23eb687b5bcdb4905a15f2778da007bb4a906e6ec65a8de66ec1fab20b&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-        </section>
+        <!-- <section class="map">
+            <div id="myMap" style="width: 100%; height: 400px;"></div>
+        </section> -->
+
+        <div id="myMap"></div>
 
         <section class="cities">
             <ul class="cities-list"> 
@@ -247,6 +250,67 @@
             </div>
         </section>
     </footer>
+
+    <script>
+        ymaps.ready(function() {
+            try {
+                // Создаем карту
+                var myMap = new ymaps.Map("myMap", {
+                    center: [55.751574, 37.573856], // Москва
+                    zoom: 10
+                });
+
+                // Альтернативный способ стилизации (без кастомной схемы)
+                myMap.options.set({
+                    suppressMapOpenBlock: true
+                });
+                
+                // Применяем черно-белый фильтр
+                myMap.setOptions({
+                    // Стандартный тип карты с фильтрами
+                    mapType: 'yandex#map',
+                    // Стили для обесцвечивания
+                    nativeFullscreenControl: true,
+                    mapTypeControl: false,
+                    yandexMapDisablePoiInteractivity: true,
+                    mapStateAutoApply: true
+                });
+                
+                // Стилизация через layers
+                var bwFilter = new ymaps.layer.StyleLayer([
+                    {
+                        filter: ['all'],
+                        stylers: {
+                            saturation: -100,
+                            lightness: 0,
+                            contrast: 50
+                        }
+                    }
+                ]);
+                
+                myMap.layers.add(bwFilter);
+
+                // Добавляем красную метку
+                var myPlacemark = new ymaps.Placemark(
+                    [55.751574, 37.573856],
+                    {
+                        hintContent: 'Красная метка',
+                        balloonContent: 'Это тёмно-красная метка!'
+                    },
+                    {
+                        preset: 'islands#darkRedDotIcon'
+                    }
+                );
+                
+                myMap.geoObjects.add(myPlacemark);
+
+            } catch (error) {
+                console.error("Ошибка Яндекс.Карт:", error);
+                document.getElementById("myMap").innerHTML = 
+                    "<div style='padding:20px;color:red'>Ошибка загрузки карты. Проверьте консоль.</div>";
+            }
+        });
+    </script>
 </body>
-<script src="js/script.js"></script>
+<!-- <script src="js/script.js"></script> -->
 </html>
