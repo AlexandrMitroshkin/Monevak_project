@@ -145,7 +145,7 @@ h1{
                                                       /* section Info1*/
 
 .Info1{
-    margin-bottom: 300px;
+    margin-bottom: 50px;
 }
 
 .Info1-wrapper {
@@ -169,7 +169,7 @@ h1{
     margin:0;
 }
 
-.Info1-Part-email{
+.Info1-Part1-email{
     margin: 0;
     margin-bottom: 20px;
 }
@@ -188,10 +188,6 @@ h1{
     margin: 0;
 }
 
-/* .Info1-Part1-group2-addresses{
-    padding-right:90px;
-} */
-
 .Info1-Part1-group2-item{
     margin: 0;
     margin-bottom:3px;
@@ -204,7 +200,6 @@ h1{
 .Info1-Part2{
     width: 630px;
     height: 395px;
-    /* margin-left: 151px; */
 }
                                             
 .Info1-Part2 h2{
@@ -214,7 +209,7 @@ h1{
 
 form{
     width: 630px;
-    height: 253px;
+    height: 335px;
 }
 
 .Info1-Part2-NameNumber{
@@ -400,6 +395,7 @@ input[name = "Ask-button"]{
     }
 
     .Info1-Part2 form{
+        height: 443px;
         width: 350px;
     }
 
@@ -419,6 +415,13 @@ input[name = "Ask-button"]{
     .Info1-Part2-textarea{
         width: 350px;
     } 
+
+    .Info1-Part2-agreeing{
+        width: 350px;
+        /* padding-right: 27px; */
+        height: 32px;
+        align-items: stretch;
+    }
 }
 
                                             /* разметка  при размере экрана меньше  800px*/
@@ -426,15 +429,15 @@ input[name = "Ask-button"]{
     .Info1-Part1{
         margin-right:72px;     
     }
+    
+    .Info1-Part1-group1 , .Info1-Part1-group2{
+        padding-right: 65px;
+    }
 }
 
                                             /* разметка  при размере экрана меньше  768px*/
 
 @media(max-width:768px){
-    
-    .Info1-Part1-numberEmail{
-        padding-left: 15px;
-    }
 
     .header-logo{
         margin: 0;
@@ -483,7 +486,7 @@ input[name = "Ask-button"]{
     }
 
     .Info1-Part1-group1 , .Info1-Part1-group2{
-        margin-left: 38px;
+        margin-left: 30px;
     }
 
     .Info1-Part1-numberEmail{
@@ -491,36 +494,188 @@ input[name = "Ask-button"]{
     }
 
     .Info1-Part1-number{
+        position: relative;
+        bottom:1px;
         margin-right: 20px;
+    }
+    
+    .Info1-Part1-email{
+        line-height: 100%;
     }
 
 
     .Info1-Part2{
+        height: 487px;
         margin: 0 auto;
         position:relative;
-        right:25px;
+        right:50px;
     }
+
+    /* .Info1-Part2 form{
+        height: 443px;
+    } */
 
 }
 
-                                            /* разметка при размере экрана меньше  500px */
+                                            /* разметка при размере экрана меньше  550px */
 
-@media(max-width:500px){
+@media(max-width:550px){
+    .Info1-wrapper{
+        width: 287px;
+    }
+
+    .Info1-Part1{
+        width: 287px;
+        position: relative;
+        left: 15px;
+    }
+    
+    .Info1-Part2{
+        width: 287px;;
+    }
+
     .Info1-Part1-numberEmail{
         flex-direction: column;
-        margin-bottom: 20px;
-        width: 230px;
-        margin:0 auto;
+        width: 100%;
+        margin: 0 auto 20px auto;
+        position: relative;
+        right: 25px
     }
 
     .Info1-Part1-number{
         margin: 0 auto;
         margin-bottom: 6px;
     }
-
-    .Info1-Part-email{
-        margin:0 auto;
+    
+    .Info1-Part1-email{
+        margin: 0 auto 0 37px;
     }
+
+    .Info1-Part1-group1 , .Info1-Part1-group2{
+        width: 287px;
+        margin: 0 auto;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    .Info1-Part1-group1{
+        padding-right: 28px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* .Info1-Part2{
+        width: 287px;
+        height: 484px;
+        position: relative;
+        right:0;
+        left:25px;
+    }
+
+    form{
+        width: 287px;
+        height: 256px;
+    }
+
+    .Info1-Part2-NameNumber{
+        width: 287px;
+        height: 60px;
+    }
+
+    .Info1-Part2-NameNumber input{
+        width: 287px;
+        height: 60px;
+    }
+
+    .Info1-Part2-textarea{
+        width: 287px;
+        height: 166px;
+    }
+
+    .Info1-Part2-agreeing{
+        width: 287px;
+        height: 48px;
+    }
+
+    #Info1-Part2-checkbox{
+        margin: 0;
+    }
+
+    .Info1-Part1-agreeing-text{
+        width: 254px;
+        height: 48px;
+    }
+
+    input[name = "Ask-button"]{
+        width: 190px;
+    } */
+
+
+
+
+
+    .Info1-Part2{
+        width: 287px;
+        height: auto; 
+        position: relative;
+        right:0;
+        /* left:25px; */
+        margin-bottom: 30px; 
+    }
+
+    .Info1-Part2 h2{
+        margin:0 auto 10px 25px;
+    }
+
+    .Info1-Part2 form{
+        width: 262px;
+        height: auto; 
+        position: relative;
+        left:5px
+    }
+
+    .Info1-Part2-NameNumber{
+        width: 262px;
+        height: 130px;
+        margin-bottom: 10px; 
+    }
+    
+    .Info1-Part2-NameNumber input{
+        height: 60px
+    }
+
+    .Info1-Part2-textarea{
+        width: 262px;
+        height: 166px;
+        margin-bottom: 20px;
+    }
+
+    .Info1-Part2-agreeing{
+        width: 262px;
+        height: 48px;
+        margin-bottom: 21px;
+        align-items: stretch;
+    }
+
+    /* #Info1-Part2-checkbox{
+        margin:auto 16px auto 0;
+    } */
+
+    input[name = "Ask-button"]{
+        display: block;
+        width: 190px;
+        margin:0 auto 0 auto
+
+    }
+
 }
 
                                             /* разметка при размере экрана меньше  480px*/

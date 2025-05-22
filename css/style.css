@@ -14,6 +14,10 @@ a{
     text-decoration: none;
 }
 
+address {
+  font-style: normal;
+}
+
 .redButton{
     font-family: 'RoadRadio';
     font-size: 14px;
@@ -111,7 +115,7 @@ a{
     font-weight: 400;
 }
 
-.Info1-Part-email{
+.Info1-Part1-email{
     font-size: 25px;
     color: rgba(191, 39, 56, 1);
 }
@@ -295,6 +299,8 @@ input[name = "Ask-button"]{
     
 
 
+                                                    /* разметка при ширине экрна меньше 1150px */
+
 
 
                                                 /* разметка при ширине экрана менее 768px */
@@ -311,26 +317,11 @@ input[name = "Ask-button"]{
     
                                                        /* main */
                                                     /* section Info1 */
-/*     
-    .Info1 h1{
-        font-size:32px;
-    }
-
-    .Info1-Part1-number{
+    
+    .Info1-Part1-email{
         font-size: 28px;
         line-height: 120%;
     }
-
-    .Info1-Part1-group1 h2,p{
-        font-size:14px;
-        line-height: 140%;
-    }
-
-    .Info1-Part2 h2{
-        font-size: 28px;
-        line-height: 120%;
-        color:rgba(33, 33, 33, 1);
-    } */
 
 
                                                         /* section cities */
@@ -365,9 +356,9 @@ input[name = "Ask-button"]{
 
 
 
-                                                         /* разметка при ширине экрана менее 480px */   
+                                                         /* разметка при ширине экрана менее 550px */   
                                                          
-@media(max-width:480px){
+@media(max-width:550px){
 
                                                         /* main */
                                                     /* breadcrums */
@@ -394,15 +385,13 @@ input[name = "Ask-button"]{
         line-height: 120%;
     }
 
-    .Info1-Part-email{
+    .Info1-Part1-email{
         font-size: 25px;
         color: rgba(191, 39, 56, 1);
     }
 
-
     .Info1-Part2 h2{
-        font-size: 20px;
-
+        font-size: 20px!important;
     }
 
                                                     /* section cities */
