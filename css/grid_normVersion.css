@@ -269,8 +269,80 @@ input[name = "Ask-button"]{
     padding: 19px 36px;
     border-radius: 14px;
     cursor: pointer;
+}
+
+                                                        /* section map */
+.map{
+    margin-bottom: 81px;
+}
 
 
+
+                                                       /* section cities */
+
+.cities {
+    margin-bottom: 100px;
+    width: 100%;
+    padding: 25px;
+}
+
+.cities-list {
+    min-width: 288px;
+    max-width: 1290px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:30px
+}
+
+.cities-item {
+    width: 300px;
+    height: 310px;
+    padding: 33px 16px 40px 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cities-item:last-child{
+    width: 630px;
+}
+
+.cities-item h2 {
+    width: 190px;
+    height: 29px;
+    margin:0 auto 15px 0;
+}
+
+.cities-item-number1, 
+.cities-item-number2 {
+    margin: 0;
+    margin-bottom: 5px;
+    height: 29px;
+}
+
+.cities-lastItem-br{
+    display: none;
+}
+
+.cities-item address {
+    margin-bottom: 8px;
+    height: 22.5px;
+}
+
+.cities-item:first-child address{
+    height: 62.5px;
+}
+
+.cities-item a {
+    margin-bottom: 15px;
+    height: 22.5px;
+}
+
+.cities-item-workTime {
+    height: 20px;
+    margin: 0;
+    margin-bottom: auto;
 }
 
 
@@ -280,13 +352,27 @@ input[name = "Ask-button"]{
 
 
 
-
-
-
-
-
-
                                                          /* media */
+                                            /* разметка при ширине экрана меньше 1350px */
+
+
+@media(max-width:1351px){
+                                                    /* cities */
+
+    .cities-list {
+        gap: 10px;
+    }                                                
+
+    .cities-item{
+        width: 350px;
+    }
+
+    .cities-item:last-child{
+        margin: 0 auto;
+    }
+}
+
+
                                                 /* разметка при размере экрана меньше  1320px*/
 
 @media(max-width:1320px){
@@ -328,9 +414,8 @@ input[name = "Ask-button"]{
     .Info1-Part1{
         margin-right: 150px;
     }
-
-
 }
+
 
                                                     /* разметка при размере экрана меньше  1150px*/
 
@@ -422,6 +507,24 @@ input[name = "Ask-button"]{
         height: 32px;
         align-items: stretch;
     }
+
+
+                                                        /* cities */
+
+    .cities-list {
+        max-width:800px;
+        justify-content: center;
+        column-gap:10px;
+        row-gap:20px
+    }                                                
+
+    /* .cities-item{
+        margin: 0 auto;
+    } */
+
+    /* .cities-item:last-child{
+        margin: 0 auto;
+    } */
 }
 
                                             /* разметка  при размере экрана меньше  800px*/
@@ -435,7 +538,7 @@ input[name = "Ask-button"]{
     }
 }
 
-                                            /* разметка  при размере экрана меньше  768px*/
+                                            /* разметка  при размере экранe меньше  768px*/
 
 @media(max-width:768px){
 
@@ -472,13 +575,6 @@ input[name = "Ask-button"]{
         min-width: 320px;
     }
     
-    /* .Info1-Part1{
-        padding-left:100px;
-        max-width: 500px;
-        min-width: 287px;
-        margin: 0 auto;
-    } */
-
     .Info1-Part1{
         max-width: 718px;
         min-width: 287px;
@@ -515,6 +611,45 @@ input[name = "Ask-button"]{
         height: 443px;
     } */
 
+                                                                    /* .cities */
+
+    .cities-item:last-child{
+        height: 395px;
+        width:403.2px;
+    }
+
+    /* .cities-item:last-child h2{
+        margin:;
+    } */
+
+    .cities-lastItem-br{
+        display: inline;
+    }
+
+    .cities-item:last-child .cities-item-number1 , .cities-item:last-child .cities-item-number2{
+        width:245px ;
+        /* margin:0 auto 10px auto; */
+        height: auto;
+        /* text-align: center; */
+        line-height: 150%;
+    }
+
+    .cities-item:last-child address{
+        height: auto;
+        width: 276px;
+        /* margin:0 auto 18px auto; */
+        /* text-align: center; */
+    }
+
+    .cities-item:last-child .cities-item-workTime{
+        width: 217px;
+        /* margin: 0 auto; */
+    }
+
+    .cities-item:last-child a{
+        width:144px;
+        /* margin: 0 auto 18px auto; */
+    }
 }
 
                                             /* разметка при размере экрана меньше  550px */
@@ -561,66 +696,6 @@ input[name = "Ask-button"]{
     .Info1-Part1-group1{
         padding-right: 28px;
     }
-
-
-
-
-
-
-
-
-
-
-
-    /* .Info1-Part2{
-        width: 287px;
-        height: 484px;
-        position: relative;
-        right:0;
-        left:25px;
-    }
-
-    form{
-        width: 287px;
-        height: 256px;
-    }
-
-    .Info1-Part2-NameNumber{
-        width: 287px;
-        height: 60px;
-    }
-
-    .Info1-Part2-NameNumber input{
-        width: 287px;
-        height: 60px;
-    }
-
-    .Info1-Part2-textarea{
-        width: 287px;
-        height: 166px;
-    }
-
-    .Info1-Part2-agreeing{
-        width: 287px;
-        height: 48px;
-    }
-
-    #Info1-Part2-checkbox{
-        margin: 0;
-    }
-
-    .Info1-Part1-agreeing-text{
-        width: 254px;
-        height: 48px;
-    }
-
-    input[name = "Ask-button"]{
-        width: 190px;
-    } */
-
-
-
-
 
     .Info1-Part2{
         width: 287px;
@@ -678,6 +753,16 @@ input[name = "Ask-button"]{
 
 }
 
+@media(max-width:450px){
+
+                                                /* cities */
+
+    .cities-item{
+        width: 288px!important;
+    }                                            
+
+}
+
                                             /* разметка при размере экрана меньше  480px*/
 
 @media(max-width:480px){
@@ -702,6 +787,7 @@ input[name = "Ask-button"]{
         display: none;
     }
 }
+
 
                                             /* разметка при размере экрана меньше  320px*/
                                                                         
