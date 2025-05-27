@@ -388,10 +388,10 @@ input[name = "Ask-button"]{
         line-height:120%;
     }
 
-    .Info1-Part1-number{
-        font-size: 28px;
+    /* .Info1-Part1-number{
+        font-size: 25px!important;
         line-height: 120%;
-    }
+    } */
 
     .Info1-Part1-email{
         font-size: 25px;

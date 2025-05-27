@@ -19,10 +19,10 @@ ul,li{
                                                 /* header */
 
 .page-header{
-    max-width: 1450px;
+    max-width: 1340px;
     height: 92px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 25px;
     display: flex;
     align-items: center;
 }
@@ -150,7 +150,7 @@ h1{
 
 .Info1-wrapper {
     display: flex;
-    max-width: 1450px;
+    max-width: 1340px;
     margin: 0 auto;
     padding: 0 25px;
 }
@@ -274,6 +274,8 @@ input[name = "Ask-button"]{
                                                         /* section map */
 .map{
     margin-bottom: 81px;
+    max-width: 1290px;
+    margin: 0 auto;
 }
 
 
@@ -288,12 +290,14 @@ input[name = "Ask-button"]{
 
 .cities-list {
     min-width: 288px;
-    max-width: 1290px;
+    max-width: 1450px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap:30px
+    /* column-gap:100px;
+    row-gap: 15px; */
+    gap:30px;
 }
 
 .cities-item {
@@ -306,6 +310,7 @@ input[name = "Ask-button"]{
 
 .cities-item:last-child{
     width: 630px;
+    /* margin: 0 auto; */
 }
 
 .cities-item h2 {
@@ -353,22 +358,27 @@ input[name = "Ask-button"]{
 
 
                                                          /* media */
+
+                                            /* разметка при ширине экрана больше 1350px */
+
                                             /* разметка при ширине экрана меньше 1350px */
 
 
-@media(max-width:1351px){
+@media(max-width:1350px){
                                                     /* cities */
 
     .cities-list {
-        gap: 10px;
+        column-gap: 25px;
+        justify-content: center;
     }                                                
 
     .cities-item{
-        width: 350px;
+        width: 500px;
     }
 
     .cities-item:last-child{
         margin: 0 auto;
+        width: 750px;
     }
 }
 
@@ -507,34 +517,46 @@ input[name = "Ask-button"]{
         height: 32px;
         align-items: stretch;
     }
+}
 
+                                            /* разметка при ширине экрана в 1080px */
 
-                                                        /* cities */
-
-    .cities-list {
-        max-width:800px;
-        justify-content: center;
-        column-gap:10px;
-        row-gap:20px
-    }                                                
-
-    /* .cities-item{
-        margin: 0 auto;
+@media(max-width:1080px){
+    /* .cities-list{
+        gap:30px
     } */
 
-    /* .cities-item:last-child{
-        margin: 0 auto;
-    } */
+    .cities-item{
+        width: 367.5px;
+    }
+
+    .cities-item:last-child{
+        width: 750px;
+    }
 }
 
                                             /* разметка  при размере экрана меньше  800px*/
 @media(max-width:800px){
+
+                                                    /* Info1 */
     .Info1-Part1{
         margin-right:72px;     
     }
     
     .Info1-Part1-group1 , .Info1-Part1-group2{
         padding-right: 65px;
+    }
+
+
+
+                                        /* cities */
+
+    .cities-item{
+        width: 350px;
+    }
+
+    .cities-item:last-child{
+        width: 710px;
     }
 }
 
@@ -572,17 +594,20 @@ input[name = "Ask-button"]{
                                                         /* Info1 */
     .Info1-wrapper{
         flex-direction: column;
-        min-width: 320px;
+        /* min-width: 320px; */
     }
     
     .Info1-Part1{
         max-width: 718px;
-        min-width: 287px;
+        /* min-width: 287px; */
         margin: 0 auto 50px auto;
     }
 
     .Info1-Part1-group1 , .Info1-Part1-group2{
-        margin-left: 30px;
+        /* margin-left: 30px; */
+        padding:0;
+        position: relative;
+
     }
 
     .Info1-Part1-numberEmail{
@@ -592,7 +617,7 @@ input[name = "Ask-button"]{
     .Info1-Part1-number{
         position: relative;
         bottom:1px;
-        margin-right: 20px;
+        margin-right: 30px;
     }
     
     .Info1-Part1-email{
@@ -601,26 +626,42 @@ input[name = "Ask-button"]{
 
 
     .Info1-Part2{
+        width: 450px;
         height: 487px;
         margin: 0 auto;
-        position:relative;
-        right:50px;
+        position: relative;
+        right:25px
     }
 
-    /* .Info1-Part2 form{
-        height: 443px;
-    } */
+    .Info1-Part2 form{
+        width: 450px;
+    }
 
+    .Info1-Part2-NameNumber{
+        width: 450px;
+    }
+
+    .Info1-Part2-textarea{
+        width: 450px;
+    } 
+
+    .Info1-Part2-agreeing{
+        width: 450px;
+    }
                                                                     /* .cities */
+
+    .cities-list{
+        gap: 10px;
+    }
+
+    .cities-item{
+        width:288px ;
+    }
 
     .cities-item:last-child{
         height: 395px;
-        width:403.2px;
+        width:600px;
     }
-
-    /* .cities-item:last-child h2{
-        margin:;
-    } */
 
     .cities-lastItem-br{
         display: inline;
@@ -628,77 +669,80 @@ input[name = "Ask-button"]{
 
     .cities-item:last-child .cities-item-number1 , .cities-item:last-child .cities-item-number2{
         width:245px ;
-        /* margin:0 auto 10px auto; */
         height: auto;
-        /* text-align: center; */
         line-height: 150%;
     }
 
     .cities-item:last-child address{
         height: auto;
         width: 276px;
-        /* margin:0 auto 18px auto; */
-        /* text-align: center; */
     }
 
     .cities-item:last-child .cities-item-workTime{
         width: 217px;
-        /* margin: 0 auto; */
     }
 
     .cities-item:last-child a{
         width:144px;
-        /* margin: 0 auto 18px auto; */
     }
 }
+
+                                            /* разметка при ширине экрана в 636px */
+
+                                                         /* cities */
+
+@media(max-width:636px){
+    .cities-item{
+        width: 450px;
+    }
+}
+
 
                                             /* разметка при размере экрана меньше  550px */
 
 @media(max-width:550px){
     .Info1-wrapper{
-        width: 287px;
+        width: 350px;
+        padding: 0;
     }
 
     .Info1-Part1{
-        width: 287px;
-        position: relative;
-        left: 15px;
+        width: 350px;
+        margin: 0;
+        margin-bottom: 50px;
+        /* position: relative;
+        left: 15px; */
     }
     
     .Info1-Part2{
-        width: 287px;;
+        width: 300px;
     }
 
     .Info1-Part1-numberEmail{
         flex-direction: column;
-        width: 100%;
-        margin: 0 auto 20px auto;
-        position: relative;
-        right: 25px
+        width: 350px;
+        /* margin: 0 auto 20px auto; */
+        /* position: relative;
+        left: 35px */
     }
 
     .Info1-Part1-number{
-        margin: 0 auto;
+        margin-right: auto;
+        /* margin:0 auto; */
         margin-bottom: 6px;
     }
     
     .Info1-Part1-email{
-        margin: 0 auto 0 37px;
+        margin-right: auto;
+        /* margin:0 auto; */
     }
 
     .Info1-Part1-group1 , .Info1-Part1-group2{
-        width: 287px;
-        margin: 0 auto;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-    
-    .Info1-Part1-group1{
-        padding-right: 28px;
+        width: 350px;
     }
 
     .Info1-Part2{
-        width: 287px;
+        width: 350px;
         height: auto; 
         position: relative;
         right:0;
@@ -706,19 +750,15 @@ input[name = "Ask-button"]{
         margin-bottom: 30px; 
     }
 
-    .Info1-Part2 h2{
-        margin:0 auto 10px 25px;
-    }
-
     .Info1-Part2 form{
-        width: 262px;
+        width: 350px;
         height: auto; 
-        position: relative;
-        left:5px
+        /* position: relative;
+        left:5px */
     }
 
     .Info1-Part2-NameNumber{
-        width: 262px;
+        width: 350px;
         height: 130px;
         margin-bottom: 10px; 
     }
@@ -728,47 +768,28 @@ input[name = "Ask-button"]{
     }
 
     .Info1-Part2-textarea{
-        width: 262px;
+        width: 350px;
         height: 166px;
         margin-bottom: 20px;
     }
 
     .Info1-Part2-agreeing{
-        width: 262px;
+        width: 350px;
         height: 48px;
         margin-bottom: 21px;
         align-items: stretch;
     }
 
-    /* #Info1-Part2-checkbox{
-        margin:auto 16px auto 0;
-    } */
-
     input[name = "Ask-button"]{
         display: block;
         width: 190px;
-        margin:0 auto 0 auto
-
     }
 
 }
 
-@media(max-width:450px){
+                                            /* разметка при ширине экрана меньше  480px*/
 
-                                                /* cities */
-
-    .cities-item{
-        width: 288px!important;
-    }                                            
-
-}
-
-                                            /* разметка при размере экрана меньше  480px*/
-
-@media(max-width:480px){
-    /* .page-header{                                            
-        min-width: 280px;
-    } */
+/* @media(max-width:480px){
 
     .header-article1{
         width: 23px;
@@ -786,8 +807,103 @@ input[name = "Ask-button"]{
     .header-article2-mediaInf{
         display: none;
     }
-}
+} */
 
+                                             /* разметка при ширине экрана меньше 400px */
+
+@media(max-width:400px){
+    .Info1-wrapper{
+        margin: 0 auto;
+        width: 287px;
+    }
+
+    .Info1-Part1{
+        width: 287px;
+        margin: 0 18px 0 15px;
+        margin-bottom: 50px;
+    }
+    
+    .Info1-Part2{
+        width: 287px;
+        margin: 0 18px 0 15px;
+    }
+
+    .Info1-Part1-numberEmail{
+        width: 287px;
+    }
+
+    .Info1-Part1-number{
+        margin-right: auto;
+        /* margin:0 auto; */
+        margin-bottom: 6px;
+    }
+    
+    .Info1-Part1-email{
+        margin-right: auto;
+        /* margin:0 auto; */
+    }
+
+    .Info1-Part1-group1 , .Info1-Part1-group2{
+        width: 287px;
+    }
+
+    .Info1-Part2{
+        width: 287px;
+        height: auto; 
+        position: relative;
+        right:0;
+        /* left:25px; */
+        margin: 0;
+        margin-bottom: 30px; 
+    }
+
+    .Info1-Part2 form{
+        width: 287px;
+        height: auto; 
+        /* position: relative;
+        left:5px */
+    }
+
+    .Info1-Part2-NameNumber{
+        width: 287px;
+        height: 130px;
+        margin-bottom: 10px; 
+    }
+    
+    .Info1-Part2-NameNumber input{
+        height: 60px
+    }
+
+    .Info1-Part2-textarea{
+        width: 287px;
+        height: 166px;
+        margin-bottom: 20px;
+    }
+
+    .Info1-Part2-agreeing{
+        width: 287px;
+        height: 48px;
+        margin-bottom: 21px;
+        align-items: stretch;
+    }
+
+    input[name = "Ask-button"]{
+        display: block;
+        width: 190px;
+    }
+
+
+                                                /* cities */
+
+    .cities{
+        padding:0;
+    }
+
+    .cities-item{
+        width: 288px;
+    }
+
+}
 
                                             /* разметка при размере экрана меньше  320px*/
                                                                         
