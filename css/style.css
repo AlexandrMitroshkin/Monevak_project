@@ -312,6 +312,33 @@ input[name = "Ask-button"]{
 }
     
                                                                         /* media */
+
+                                                                    /* разметка при ширине экрна менее 830px */
+@media(max-width:830px){
+                                                            /* footer  (media)*/
+                                                    /* section footer-left  (media)*/
+                                        
+    .footer-left-list1-item a{
+        font-size: 20px;
+        line-height: 170%;
+    }
+
+                                                /* section footer-right  (media)*/
+                                                
+    .footer-right-number1 , .footer-right-number2{
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 150%;
+    }
+
+    .footer-right-email{
+        color: rgba(242, 49, 71, 1);
+        font-size: 19px;
+        line-height: 100%;
+    }
+
+}
+
                                                                     /* разметка при ширине экрана менее 768px */
 
 
@@ -337,29 +364,6 @@ input[name = "Ask-button"]{
 
     .cities-item h2{
         font-weight: 400;
-    }
-
-
-                                                        /* footer  (media)*/
-                                                    /* section footer-left  (media)*/
-                                        
-    .footer-left-list1-item a{
-        font-size: 20px;
-        line-height: 170%;
-    }
-
-                                                /* section footer-right  (media)*/
-                                                
-    .footer-right-number1 , .footer-right-number2{
-        font-weight: 500;
-        font-size: 23px;
-        line-height: 150%;
-    }
-
-    .footer-right-email{
-        color: rgba(242, 49, 71, 1);
-        font-size: 19px;
-        line-height: 100%;
     }
 }
 

@@ -363,6 +363,7 @@ input[name = "Ask-button"]{
     display: flex;
     flex-direction: column;
     flex: 1;
+    height: 400px;
     background-color: rgba(34, 34, 37, 1);
     padding-top: 63px;
     padding-right:156px;
@@ -372,6 +373,10 @@ input[name = "Ask-button"]{
     width: 331px;
     height: 166px;
     margin: 0 158px 69px auto;
+}
+
+.footer-left-list1-move{
+    display: none;
 }
 
 .footer-left-list2{
@@ -386,12 +391,13 @@ input[name = "Ask-button"]{
     margin-right: 21px;
 }
 
-.footer-left-list2-item-move{
+.footer-left-list2-move{
     margin: 0;
 }
 
 .footer-right {
     flex: 1;
+    height: 400px;
     background-color: rgba(42, 42, 46, 1);
     padding: 63px 31px 0 127px;
     display: flex;
@@ -501,11 +507,7 @@ input[name = "Ask-button"]{
         margin: 0 auto 47px 0;
     }
 
-    .footer-left-list2:nth-child(3n){
-        margin:0
-    }
-
-    .footer-left-list2-item-move{
+    .footer-left-list2-move{
         margin-right: 21px;
     }
 
@@ -524,10 +526,6 @@ input[name = "Ask-button"]{
         /* width: 285px; */
         margin: 0;
         margin-bottom: 20px;
-    }
-
-    .footer-right-numbers p{
-        /* width: 285px; */
     }
 
     .footer-right-email{
@@ -705,15 +703,33 @@ input[name = "Ask-button"]{
 
     .footer-left{
         height: 360px;
-        padding:43px 40px 0 25px !important;
+        padding:43px 25px 0 25px;
     }
 
     .footer-left-list1{
         margin-bottom: 46px;
+        width: 331px;
     }
 
+    .footer-left-list2{
+        width: 290px;
+    }
+
+    .footer-left-list2 li:nth-child(3n){
+        margin:0
+    }
+
+    /* .footer-left-list1-item:first-child{
+        display: block;
+        margin-bottom: 6px;
+    } */
+
+    /* .footer-left-list1-move{
+        display: inline;
+    } */
+
     .footer-right{
-        padding: 43px 25px 0 40px;
+        padding: 43px 25px 0 25px;
         height: 360px;
     }
 
@@ -754,8 +770,8 @@ input[name = "Ask-button"]{
     }
 }
 
-                                                                    /* разметка  при размере экрана меньше  800px*/
-@media(max-width:800px){
+                                                                    /* разметка  при размере экрана меньше  830px*/
+@media(max-width:830px){
 
                                             /* Info1  (media) */
     .Info1-Part1{
@@ -768,12 +784,40 @@ input[name = "Ask-button"]{
 
                                             /* cities  (media) */
 
+    .cities-list{
+        gap: 10px;
+    }
+
     .cities-item{
-        width: 350px;
+        width:288px ;
     }
 
     .cities-item:last-child{
-        width: 710px;
+        height: 395px;
+        width:600px;
+    }
+
+    .cities-lastItem-br{
+        display: inline;
+    }
+
+    .cities-item:last-child .cities-item-number1 , .cities-item:last-child .cities-item-number2{
+        width:245px ;
+        height: auto;
+        line-height: 150%;
+    }
+
+    .cities-item:last-child address{
+        height: auto;
+        width: 276px;
+    }
+
+    .cities-item:last-child .cities-item-workTime{
+        width: 217px;
+    }
+
+    .cities-item:last-child a{
+        width:144px;
     }
 }
 
@@ -865,46 +909,88 @@ input[name = "Ask-button"]{
     .Info1-Part2-agreeing{
         width: 450px;
     }
-                                        /* .cities  (media) */
+                                                        /* footer(media) */
 
-    .cities-list{
-        gap: 10px;
+    .footer-left{
+        padding-top:20px;
     }
-
-    .cities-item{
-        width:288px ;
+    
+    .footer-left-list1{
+        width: 188px;
+        height: 150px;
+        margin-bottom: 25px;
     }
-
-    .cities-item:last-child{
-        height: 395px;
-        width:600px;
-    }
-
-    .cities-lastItem-br{
+                        
+    .footer-left-list1-move{
         display: inline;
     }
 
-    .cities-item:last-child .cities-item-number1 , .cities-item:last-child .cities-item-number2{
-        width:245px ;
+    .footer-left-list1-item:first-child a{
+        line-height: 120%;
+    }
+    
+    .footer-left-list1-item:first-child{
+        margin-bottom: 6px;
+    }
+
+    .footer-left-list2{
+        height: 145px;
+        width: 210px;
+        margin-bottom: 15px;
+    }
+
+    .footer-left-list2 li:nth-child(3n){
+        margin-right: 21px;
+    }
+
+    .footer-left-list2 li:nth-child(2n){
+        margin:0;
+    }
+    
+    .footer-right{
+        padding-top:20px;
+    }
+
+    .footer-right-top{
+        width: 207px;
+    }
+
+    .footer-right-numbers{
+        width: 207px;
+    }
+
+    .footer-right-email{
+        position: relative;
+        left: 0;
+        right: 25px;
+        width: 150px;
+        height: 18.42px;
+        /* margin: 0; */
+    }
+
+    .footer-right address{
+        width: 220px;
         height: auto;
-        line-height: 150%;
     }
 
-    .cities-item:last-child address{
-        height: auto;
-        width: 276px;
+    .footer-lastInfo-left{
+        padding-right: 25px;
     }
 
-    .cities-item:last-child .cities-item-workTime{
-        width: 217px;
+    .footer-lastInfo-right{
+        padding-left: 25px;
     }
 
-    .cities-item:last-child a{
-        width:144px;
+    .DevelopingSite{
+        position: relative;
+        left:0;
+        right:0;
+        margin: 20px auto 27px auto;
     }
+
 }
 
-                                                                /* разметка при ширине экрана в 636px */
+                                                                    /* разметка при ширине экрана в 636px */
 
                                                          /* cities  (media) */
 
@@ -912,6 +998,43 @@ input[name = "Ask-button"]{
     .cities-item{
         width: 450px;
     }
+
+
+                                                       /* footer(media) */
+
+    .footer-right-top{
+        margin: 0 auto 15px 0;
+    }
+
+    .footer-right-email{
+        margin: 0 auto 15px 0;
+    }
+
+    .footer-right address{
+        width: 200px;
+        height: 80px;
+        margin: 0 auto 58.660px 0;
+    }
+
+    .Coopiright_policy{
+        width: 124.71px;
+        display: flex;
+        flex-direction: column;
+        height:28px ;
+    }
+
+    .DevelopingSite{
+        display: flex;
+        flex-direction: column;
+        height: 26px;
+        width: 210px;
+    }
+
+    .DevelopingSite a{
+        margin: 3px 110px 0 80px;
+    }
+
+
 }
 
 
@@ -1002,9 +1125,101 @@ input[name = "Ask-button"]{
         width: 190px;
     }
 
+
+                                              /* footer (media) */
+
+    .footer-leftRight{
+        flex-direction: column;
+        height: 703.34px;
+    }
+
+    .footer-left{
+        height: 348px;
+    }
+
+    .footer-left-list1{
+        margin: 0 auto 35px auto; 
+        width: 280px;
+        height: 136px;
+    }
+    
+    .footer-left-list1-item:first-child{
+        margin: 0;
+    }
+
+    .footer-left-list2{
+        height: 116px;
+        width: 284px;
+        margin: 0 auto;
+    }
+    
+    .footer-left-list2 li:nth-child(2n){
+        margin-right: 21px!important;
+    }
+
+    .footer-left-list2 li:nth-child(3n){
+        margin: 0;
+    }
+
+    .footer-right-top{
+        margin: 0 auto 15px auto;
+    }
+
+    .footer-right-email{
+        margin: 0 auto 15px auto;
+        position: relative;
+        left: auto;
+        right: 25px
+    }
+
+    .footer-right address{
+        width: 290px;
+        height: 80px;
+        margin: 0 auto 58.660px auto;
+        position: relative;
+        left: 35px;
+    }
+
+    .footer-lastInfo{
+        background-color: rgba(42, 42, 46, 1);
+        flex-direction: column;
+        height: 84.66px;
+    }
+
+    .footer-lastInfo-left{
+        background-color: rgba(42, 42, 46, 1);
+        padding: 0;
+        height: 43.66px;
+        
+    }
+    .Coopiright_policy{
+        margin: 19.66px auto 10px auto;
+        display: flex;
+        flex-direction: row;
+        height: 14px;
+        width: 234px;
+    }
+
+    .footer-lastInfo-right{
+        padding: 0;
+        height: 41px;
+    }
+
+    .DevelopingSite{
+        width: 243px;
+        height: 12.48px;
+        margin: 0 auto auto auto;
+        flex-direction: row;
+    }
+
+    .DevelopingSite a{
+        margin: 0;
+    }
+
+
 }
 
-                                                            /* разметка при ширине экрана меньше 400px */
+                                                                    /* разметка при ширине экрана меньше 400px */
 
 @media(max-width:400px){
 
@@ -1099,7 +1314,15 @@ input[name = "Ask-button"]{
     .cities-item{
         width: 288px;
     }
+                                                /* footer (media) */
 
+    .footer-right address{
+        width: 240px;
+        height: 80px;
+        margin: 0 auto 58.660px auto;
+        position: relative;
+        left: 15px;
+    }
 }
 
                                                                     /* разметка при размере экрана меньше  320px*/
