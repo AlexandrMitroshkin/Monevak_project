@@ -350,22 +350,126 @@ input[name = "Ask-button"]{
     margin-bottom: auto;
 }
 
+                                                /* footer */
+
+.footer-leftRight {
+    width: 100%;
+    display: flex;
+    /* height: 400px; */
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgba(34, 34, 37, 1);
+    padding-top: 63px;
+    padding-right:156px;
+}
+
+.footer-left-list1{
+    width: 331px;
+    height: 166px;
+    margin: 0 158px 69px auto;
+}
+
+.footer-left-list2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 488px;
+    height: 58px;
+    margin: 0 0 43px auto;
+}
+
+.footer-left-list2-item{
+    margin-right: 21px;
+}
+
+.footer-left-list2-item-move{
+    margin: 0;
+}
+
+.footer-right {
+    flex: 1;
+    background-color: rgba(42, 42, 46, 1);
+    padding: 63px 31px 0 127px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right-top{
+    width: 520px;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 20px 0;
+}
+
+.footer-right-number1 , .footer-right-number2{
+    margin: 0;
+}
+
+.footer-right-top a{
+    width: 190px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-right-email{
+    width: 203px;
+    height: 34px;
+    margin: 0 auto 97px 0;
+}
+
+.footer-right address{
+    width: 447px;
+    height: 42px;
+    margin: 0 auto 55px 0;
+}
+
+.footer-lastInfo{
+    width: 100%;
+    display: flex;
+    height: 68px;
+}
+
+.footer-lastInfo-left{
+    display: flex;
+    flex:1;
+}
+
+.Coopiright_policy{
+    width: 234px;
+    height: 14px;
+    margin: 23px 410px 31px auto;
+}
+
+.footer-lastInfo-right{
+    display: flex;
+    flex:1;
+    padding-left:2px
+}
+
+.DevelopingSite{
+    display: flex;
+    justify-content: space-between;
+    width: 244px;
+    height: 14px;
+    margin:21px auto 31px 127px
+}
+
+.DevelopingSite p , .DevelopingSite a{
+    margin: 0;
+}
 
 
-
-
-
-
-
-                                                         /* media */
-
-                                            /* разметка при ширине экрана больше 1350px */
-
-                                            /* разметка при ширине экрана меньше 1350px */
-
-
+                                                                            /* media */
+                                                                        /* разметка при ширине экрана меньше 1350px */
 @media(max-width:1350px){
-                                                    /* cities */
+                                                                /*cities   (media)*/
 
     .cities-list {
         column-gap: 25px;
@@ -380,16 +484,91 @@ input[name = "Ask-button"]{
         margin: 0 auto;
         width: 750px;
     }
+
+                                                            /* footer (media) */
+
+    .footer-left{
+        padding-left:25px;
+    }
+
+    .footer-left-list1{
+        margin:0 auto 69px 0
+    }
+
+    .footer-left-list2{
+        width: 349px;
+        height: 87px;
+        margin: 0 auto 47px 0;
+    }
+
+    .footer-left-list2:nth-child(3n){
+        margin:0
+    }
+
+    .footer-left-list2-item-move{
+        margin-right: 21px;
+    }
+
+    .footer-right{
+        padding-right: 25px;
+    }
+
+    .footer-right-top{
+        flex-direction: column;
+        margin: 0 auto 15px auto;
+        height: 160px;
+        width: 285px;
+    }
+
+    .footer-right-numbers{
+        /* width: 285px; */
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-right-numbers p{
+        /* width: 285px; */
+    }
+
+    .footer-right-email{
+        margin: 0 auto 33.02px auto;
+        position: relative;
+        right: 40px;
+    }
+
+    .footer-right address{
+        width: 290px;
+        height: 55.27px;
+        margin: 0 auto 58.66px auto;
+    }
+
+    .footer-lastInfo-left{
+        padding: 0 156px 0 25px;
+    }
+
+    .Coopiright_policy{
+        margin: 23px auto 31px 0;
+    }
+
+    .footer-lastInfo-right{
+        padding: 0 25px 0 127px; 
+    }
+
+    .DevelopingSite{
+        position: relative;
+        right: 20px;
+        margin: 23px auto 31px auto;
+    }
+
+
 }
 
 
-                                                /* разметка при размере экрана меньше  1320px*/
+                                                                        /* разметка при размере экрана меньше  1320px*/
 
 @media(max-width:1320px){
 
-    /* .header-article1{
-        margin-right: 10px;
-    } */
+                                                    /* header (media) */
 
     .header-article1-item:last-child{
         display:none;
@@ -419,7 +598,7 @@ input[name = "Ask-button"]{
         display:none;
     }
 
-                                                     /* Info1 */
+                                                     /* Info1 (media)  */
 
     .Info1-Part1{
         margin-right: 150px;
@@ -427,11 +606,11 @@ input[name = "Ask-button"]{
 }
 
 
-                                                    /* разметка при размере экрана меньше  1150px*/
+                                                                        /* разметка при размере экрана меньше  1150px*/
 
 @media(max-width:1150px){
 
-                                                        /* header */
+                                                        /* header (media)  */
 
     /* .header-article1-item:last-child{
         display:none;
@@ -454,7 +633,7 @@ input[name = "Ask-button"]{
         /* margin-left:15px; */
     }
 
-                                                        /* Info1 */
+                                                        /* Info1  (media) */
 
     .Info1 h1{
         font-size:32px;
@@ -517,9 +696,49 @@ input[name = "Ask-button"]{
         height: 32px;
         align-items: stretch;
     }
+
+                                            /* footer (media) */
+
+    footer{
+        height: 420px;
+    }
+
+    .footer-left{
+        height: 360px;
+        padding:43px 40px 0 25px !important;
+    }
+
+    .footer-left-list1{
+        margin-bottom: 46px;
+    }
+
+    .footer-right{
+        padding: 43px 25px 0 40px;
+        height: 360px;
+    }
+
+    .footer-right-email{
+        margin-bottom: 15px;
+    }
+
+    .footer-lastInfo-left{
+        padding-right: 40px;
+    }
+
+    .Coopiright_policy{
+        margin:20px auto 27px 0;
+    }
+
+    .footer-lastInfo-right{
+        padding-left: 40px;
+    }
+
+    .DevelopingSite{
+        margin: 20px auto 27px auto;
+    }
 }
 
-                                            /* разметка при ширине экрана в 1080px */
+                                                                    /* разметка при ширине экрана в 1080px */
 
 @media(max-width:1080px){
     /* .cities-list{
@@ -535,10 +754,10 @@ input[name = "Ask-button"]{
     }
 }
 
-                                            /* разметка  при размере экрана меньше  800px*/
+                                                                    /* разметка  при размере экрана меньше  800px*/
 @media(max-width:800px){
 
-                                                    /* Info1 */
+                                            /* Info1  (media) */
     .Info1-Part1{
         margin-right:72px;     
     }
@@ -547,9 +766,7 @@ input[name = "Ask-button"]{
         padding-right: 65px;
     }
 
-
-
-                                        /* cities */
+                                            /* cities  (media) */
 
     .cities-item{
         width: 350px;
@@ -560,7 +777,7 @@ input[name = "Ask-button"]{
     }
 }
 
-                                            /* разметка  при размере экранe меньше  768px*/
+                                                                        /* разметка  при размере экранe меньше  768px*/
 
 @media(max-width:768px){
 
@@ -591,7 +808,7 @@ input[name = "Ask-button"]{
         display: none;
     }
 
-                                                        /* Info1 */
+                                                    /* Info1  (media) */
     .Info1-wrapper{
         flex-direction: column;
         /* min-width: 320px; */
@@ -648,7 +865,7 @@ input[name = "Ask-button"]{
     .Info1-Part2-agreeing{
         width: 450px;
     }
-                                                                    /* .cities */
+                                        /* .cities  (media) */
 
     .cities-list{
         gap: 10px;
@@ -687,9 +904,9 @@ input[name = "Ask-button"]{
     }
 }
 
-                                            /* разметка при ширине экрана в 636px */
+                                                                /* разметка при ширине экрана в 636px */
 
-                                                         /* cities */
+                                                         /* cities  (media) */
 
 @media(max-width:636px){
     .cities-item{
@@ -698,7 +915,7 @@ input[name = "Ask-button"]{
 }
 
 
-                                            /* разметка при размере экрана меньше  550px */
+                                                                    /* разметка при размере экрана меньше  550px */
 
 @media(max-width:550px){
     .Info1-wrapper{
@@ -787,31 +1004,11 @@ input[name = "Ask-button"]{
 
 }
 
-                                            /* разметка при ширине экрана меньше  480px*/
-
-/* @media(max-width:480px){
-
-    .header-article1{
-        width: 23px;
-    }
-
-    .header-article1-list{
-        display: none;
-    }
-
-    .header-article2{
-        margin:0;
-        width: 51px;
-    }
-
-    .header-article2-mediaInf{
-        display: none;
-    }
-} */
-
-                                             /* разметка при ширине экрана меньше 400px */
+                                                            /* разметка при ширине экрана меньше 400px */
 
 @media(max-width:400px){
+
+                                                    /* Info1 (media) */
     .Info1-wrapper{
         margin: 0 auto;
         width: 287px;
@@ -893,7 +1090,7 @@ input[name = "Ask-button"]{
     }
 
 
-                                                /* cities */
+                                                /* cities  (media) */
 
     .cities{
         padding:0;
@@ -905,10 +1102,13 @@ input[name = "Ask-button"]{
 
 }
 
-                                            /* разметка при размере экрана меньше  320px*/
+                                                                    /* разметка при размере экрана меньше  320px*/
                                                                         
 
-@media(max-width:320px){
+@media(max-width:320px){            
+
+                                                        /* header  (media)  */
+
     .header-logo img{
         width:67.03px;
         height: 40px;

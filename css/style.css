@@ -253,6 +253,8 @@ input[name = "Ask-button"]{
     color: rgba(255, 255, 255, 1);
     font-size: 14px;
     font-family: "RoadRadio";
+    border: 2px solid rgba(73, 73, 80, 1);
+    border-radius: 14px;
 }
 
 .footer-right-email{
@@ -273,8 +275,8 @@ input[name = "Ask-button"]{
 
                                                 /* section footer-lastInfo */
 
-                                                   /* Coopiright_policy */
-.Coopiright_policy{
+                                                   /* footer-lastInfo-left */
+.footer-lastInfo-left{
     background-color: rgba(34, 34, 37, 1);
 }
 
@@ -285,9 +287,13 @@ input[name = "Ask-button"]{
     font-family: 'AkzidenzGroteskPro-Regular';
 }
 
-                                                    /* DevelopingSite */
+.Coopiright_policy a{
+    color: rgba(121, 121, 134, 1);
+}
 
-.DevelopingSite{
+                                                    /* footer-lastInfo-right */
+
+.footer-lastInfo-right{
     background-color:rgba(42, 42, 46, 1);
 }
 
@@ -305,26 +311,21 @@ input[name = "Ask-button"]{
     color: rgba(190, 190, 190, 1);
 }
     
-
-
-                                                    /* разметка при ширине экрна меньше 1150px */
-
-
-
-                                                /* разметка при ширине экрана менее 768px */
+                                                                        /* media */
+                                                                    /* разметка при ширине экрана менее 768px */
 
 
 @media(max-width:768px){
 
-                                                        /* header */
+                                                        /* header (media)*/
 
     .header-article1-item a{
         font-size:14px;
         line-height:140%;
     }
     
-                                                       /* main */
-                                                    /* section Info1 */
+                                                       /* main  (media)*/
+                                                    /* section Info1  (media)*/
     
     .Info1-Part1-email{
         font-size: 28px;
@@ -332,22 +333,22 @@ input[name = "Ask-button"]{
     }
 
 
-                                                        /* section cities */
+                                                        /* section cities  (media)*/
 
     .cities-item h2{
         font-weight: 400;
     }
 
 
-                                                        /* footer */
-                                                    /* section footer-left */
+                                                        /* footer  (media)*/
+                                                    /* section footer-left  (media)*/
                                         
     .footer-left-list1-item a{
         font-size: 20px;
         line-height: 170%;
     }
 
-                                                /* section footer-right */
+                                                /* section footer-right  (media)*/
                                                 
     .footer-right-number1 , .footer-right-number2{
         font-weight: 500;
@@ -364,12 +365,12 @@ input[name = "Ask-button"]{
 
 
 
-                                                         /* разметка при ширине экрана менее 550px */   
+                                                                        /* разметка при ширине экрана менее 550px */   
                                                          
 @media(max-width:550px){
 
-                                                        /* main */
-                                                    /* breadcrums */
+                                                        /* main  (media)*/
+                                                    /* breadcrums  (media)*/
                                                     
     .breadcrams-main{
         font-size:12px;
@@ -381,7 +382,7 @@ input[name = "Ask-button"]{
         background-color: rgba(121, 121, 134, 1);
     }
 
-                                                    /* section Info1 */
+                                                    /* section Info1  (media)*/
     
     .Info1 h1{
         font-size:22px;
@@ -402,21 +403,21 @@ input[name = "Ask-button"]{
         font-size: 20px!important;
     }
 
-                                                    /* section cities */
+                                                    /* section cities  (media)*/
 
     .cities-item h2{
         font-weight: 400;
     }
 
-                                                            /* footer */
-                                                    /* section footer-left */
+                                                            /* footer  (media)*/
+                                                    /* section footer-left  (media)*/
                                         
     .footer-left-list1-item a{
         font-size: 20px;
         line-height: 170%;
     }
 
-                                                /* section footer-right */
+                                                /* section footer-right  (media)*/
                                                 
     .footer-right-number1 , .footer-right-number2{
         font-weight: 500;
