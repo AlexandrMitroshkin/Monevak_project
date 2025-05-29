@@ -27,6 +27,19 @@
                     <li class="header-article1-item"><a href="#">Оборудование</a></li>
                     <li class="header-article1-item"><a href="#">Сервис и запчасти</a></li>
                 </ul>
+<!-- 
+                <ul class="header-article1-list">
+                    <li class="header-article1-row1">
+                        <a class="header-article1-item" href="#">Упаковка</a>
+                        <a class="header-article1-item" href="#">Оборудование</a>
+                        <a class="header-article1-item" href="#">Сервис и запчасти</a>
+                    </li>
+                    <li class="header-article1-row2">
+                        <a class="header-article1-item" href="#">future-option1</a>
+                        <a class="header-article1-item" href="#">future-option2</a>
+                        <a class="header-article1-item" href="#">future-option3</a>
+                    </li>
+                </ul> -->
             </article>
 
             <a class="header-logo">
@@ -256,66 +269,6 @@
             </article>
         </section>
     </footer>
-
-    <!-- <script>
-        ymaps.ready(function() {
-            try {
-
-                var myMap = new ymaps.Map("myMap", {
-                    center: [55.751574, 37.573856],
-                    zoom: 10
-                });
-
-
-                myMap.options.set({
-                    suppressMapOpenBlock: true
-                });
-                
-
-                myMap.setOptions({
-
-                    mapType: 'yandex#map',
-
-                    nativeFullscreenControl: true,
-                    mapTypeControl: false,
-                    yandexMapDisablePoiInteractivity: true,
-                    mapStateAutoApply: true
-                });
-
-                var bwFilter = new ymaps.layer.StyleLayer([
-                    {
-                        filter: ['all'],
-                        stylers: {
-                            saturation: -100,
-                            lightness: 0,
-                            contrast: 50
-                        }
-                    }
-                ]);
-                
-                myMap.layers.add(bwFilter);
-
-
-                var myPlacemark = new ymaps.Placemark(
-                    [55.751574, 37.573856],
-                    {
-                        hintContent: 'Красная метка',
-                        balloonContent: 'Это тёмно-красная метка!'
-                    },
-                    {
-                        preset: 'islands#darkRedDotIcon'
-                    }
-                );
-                
-                myMap.geoObjects.add(myPlacemark);
-
-            } catch (error) {
-                console.error("Ошибка Яндекс.Карт:", error);
-                document.getElementById("myMap").innerHTML = 
-                    "<div style='padding:20px;color:red'>Ошибка загрузки карты. Проверьте консоль.</div>";
-            }
-        });
-    </script> -->
 </body>
-<!-- <script src="js/script.js"></script> -->
+<script src="js/header.js"></script>
 </html>
