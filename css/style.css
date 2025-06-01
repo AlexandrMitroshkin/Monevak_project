@@ -60,7 +60,7 @@ address {
 
                                                     /* header */
 
-.header-article1-item a{
+.header-article1-item{
     text-decoration:none;
     font-size:15px;
     line-height:100%;
@@ -346,7 +346,7 @@ input[name = "Ask-button"]{
 
                                                         /* header (media)*/
 
-    .header-article1-item a{
+    .header-article1-item{
         font-size:14px;
         line-height:140%;
     }

@@ -29,7 +29,7 @@ ul,li{
 
 .header-article1{
     width: 499px;
-    height: 18px;
+    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -45,10 +45,31 @@ ul,li{
 
 .header-article1-list{
     width: 408px;
+    /* display: flex;
+    justify-content: space-between; */
+    /* align-items: center; */
+    margin: 0;
+}
+
+.header-article1-row1{
+    /* height: 18px; */
+    width: 408px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0;
+    /* align-items: center; */
+    /* margin: 0; */
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+.header-article1-row2{
+    display: none;
+    /* width: 408px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: 15px; */
+    
 }
 
 .header-logo{
@@ -567,6 +588,11 @@ input[name = "Ask-button"]{
 @media(max-width:1320px){
 
                                                     /* header (media) */
+
+    .header-article1-row1{
+        width: 197px;
+        margin: 0;
+    }                                                
 
     .header-article1-item:last-child{
         display:none;
